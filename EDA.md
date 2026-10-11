@@ -1,0 +1,150 @@
+﻿# Customer Purchase EDA
+
+
+
+
+
+
+
+### *🎯Objective*
+
+
+
+This EDA explores customer demographics (age, gender, state) and purchase Amount
+
+to show who the customers are, where they are, and how much they spend. The
+
+findings can guide targeting and marketing decisions.
+
+
+
+
+
+### *📈 Analysis Performed*
+
+
+
+Four plots cover the relationship, distribution and regional views.
+
+
+
+&#x20;         Plot                                         Purpose
+
+
+
+&#x20; Scatter (Age vs Amount)         :   Check for a relationship between age and spend
+
+
+
+&#x20; Histogram + KDE (Age)           :   Understand the age distribution
+
+
+
+&#x20; Box plot (Amount)               :   Show spread, median and outliers in spending
+
+
+
+&#x20; Heatmap (State × Gender)        :   Compare customer counts by region and gender
+
+
+
+
+
+### 🎯Key Findings
+
+
+
+Customers are mostly women in their late 20s to mid 30s, concentrated in a few
+
+large states, and age does not predict how much they spend.
+
+
+
+1\. Age is concentrated in the late 20s to mid 30s. The distribution peaks at
+
+roughly 28 to 32 and is right-skewed. Counts drop sharply after about 56, and
+
+customers over 60 are sparse (under about 50 per bin).
+
+
+
+2\. Age has no visible effect on spending. The scatter plot shows the same
+
+horizontal bands at every age, so age alone does not predict Amount.
+
+
+
+3\. Amount clusters at discrete levels. Bands near 2k, 5k, 8k, 12k, 16k and 19–₹
+
+23k suggest fixed price points or product tiers, not a continuous spread.
+
+
+
+4\. Spending is moderately right-skewed. The median is about 8,100 and the IQR₹
+
+runs from roughly 5,400 to 12,700. A few high-end outliers sit above about₹₹
+
+₹23,500, and there are no low outliers.
+
+
+
+5\. Women are the dominant group. They outnumber men by roughly 2 to 3 times in
+
+every state.
+
+
+
+6\. Customers are geographically concentrated. Uttar Pradesh (3,402 F / 1,411 M),
+
+Maharashtra (2,814 / 997), Karnataka (2,266 / 975) and Delhi (1,872 / 872) lead.
+
+Telangana, Punjab and Rajasthan have the fewest.
+
+
+
+
+
+### 🧰Suggested Business Takeaways
+
+
+
+Marketing effort is best aimed at the largest, clearest segment first.
+
+
+
+&#x20;   • Focus on women aged about 20 to 40 in Uttar Pradesh, Maharashtra, Karnataka and Delhi.
+
+
+
+&#x20;   • Treat the 55+ segment as under-served, or check whether the drop reflects data collection limits.
+
+
+
+&#x20;   • Investigate which products or categories drive the Amount bands.
+
+
+
+
+
+### 🎯Limitations and Next Steps
+
+* 
+* The four plots describe the data but do not yet explain the spending bands or
+* the drop after age 56.
+* 
+* Check why the data thins out sharply after about 56 (binning, sampling, or real
+* behavior).
+* 
+* Compare Amount distributions by gender and state, not just counts.
+* 
+* Add age groups (12–17, 18–25, 26–35, 36–55, 55+).
+* 
+* Analyze product category, occupation or marital status if available.
+* 
+* Run a correlation or hypothesis test (for example ANOVA) on Amount across gender
+* and state.
+
+
+
+
+
